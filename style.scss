@@ -32,7 +32,6 @@
 }
 .header{
     position: relative;
-    padding: 0;
 }
 .h-slider{
 
@@ -109,14 +108,6 @@
     @media screen and (max-width:568px){
         left: 25%;
         width: 75%;
-    }
-    @media screen and (max-width:460px){
-        left: 30%;
-        width: 70%;
-    }
-    @media screen and (max-width:400px){
-        left: 40%;
-        width: 60%;
     }
  
 }
@@ -206,9 +197,8 @@
     width: 100%;
     z-index: 100;
     &__text{
-        
         overflow: hidden;
-        transition: cubic-bezier(0.1, 0, 0.0035, 1.00) 1s all;
+        transition: ease 1s all;
         text-align: center;
         display: flex;
         align-items: center;
@@ -236,21 +226,21 @@
             font-size: 0px;
             opacity: 0;
             transform-origin: top right;
-            transform:translateX(100%) scaleY(0) skew(20deg);
+            transform: skew(20deg) translateX(120%) scaleX(-1) rotate(90deg);
         }   
         &--active{   
             transform-origin: top left;
             font-size: 25px;
-            transform: translateX(0) scaleX(1) rotate(0deg) skew(0deg);
+            transform: skew(0deg) translateX(0) scaleX(1) rotate(0deg);
             opacity: 1;   
         }
        
     }
     &__item{
         @media screen and (max-width:768px){   
-            width: auto;
+            width: 40%;
             height: 50px;
-            z-index: 111111;
+            z-index: 111111111;
         }
     }
     &__social{   
@@ -264,10 +254,6 @@
         }
         & img{
             transition: linear .5s all;
-            @media screen and (max-width:768px){   
-               width: 64px;
-               height: 64px;
-            }
         }
     }
     &__logo{
@@ -287,19 +273,11 @@
     display: flex;
     justify-content: center;
     height: 0px;
-    width: 100%;
+    width:100%;
 }
 .h-drop{
 z-index: 99;
 position: absolute;
-bottom: 12%;
-left: 49vw;
-&:hover{
-    cursor: pointer;
-    filter: brightness(25%);
-}
-@media screen and (max-width:992px){   
-    width: 64px;
-    height: 64px;
- }
+bottom: 10vh;
+left: 47vw;
 }

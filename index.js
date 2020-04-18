@@ -18,7 +18,6 @@ $(document).ready(
             }
         ]
     })
-
 )
 $('#burger').on('click', function () {
     $('#menu').addClass('h-menu__text--active');
@@ -26,4 +25,3 @@ $('#burger').on('click', function () {
 $('#menu').on('click', function () {
     $('#menu').removeClass('h-menu__text--active');
 })
-
