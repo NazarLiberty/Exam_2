@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "GothamBook";
+  src: url("/fonts/GothamBook/GothamBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gothambold1";
+  src: url("/fonts/gothambold/gothambold1.woff") format("woff");
+}
+
+.align-items-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.container-xl {
+  max-width: 1170px;
+}
+
+.header {
+  position: relative;
+}
+
+.h-slider__bg {
+  height: 800px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.h-slider__text-block {
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 335px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .h-slider__text-block {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.h-slider__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.h-slider__primary {
+  letter-spacing: 3px;
+  font-size: 80px;
+  font-family: 'gothambold1';
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .h-slider__primary {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .h-slider__primary {
+    font-size: 30px;
+  }
+}
+
+.h-slider__secondary {
+  letter-spacing: 5px;
+  font-size: 18px;
+  font-family: "GothamBook", serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .h-slider__secondary {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .h-slider__secondary {
+    font-size: 17px;
+  }
+}
+
+#dots {
+  z-index: 100;
+  position: absolute;
+  right: 50px;
+  top: 555px;
+}
+
+#dots-mobile {
+  z-index: 100;
+  position: absolute;
+  bottom: 150px;
+  width: 80%;
+  left: 20%;
+}
+
+@media screen and (max-width: 568px) {
+  #dots-mobile {
+    left: 25%;
+    width: 75%;
+  }
+}
+
+.my-dots li.slick-active button:before {
+  content: url(./img/circle-active.svg);
+}
+
+.my-dots {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  right: 50px;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 45px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: url("./img/circle.svg");
+  text-align: center;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header__burger {
+  margin-top: 10px;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  float: right;
+}
+
+.header__burger-img {
+  -webkit-transition: ease .2s all;
+  transition: ease .2s all;
+  max-width: 100%;
+}
+
+.header__burger-img:active {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+.h-menu {
+  margin-top: 50px;
+  max-width: 1170px;
+  width: 100%;
+  z-index: 100;
+}
+
+.h-menu__text {
+  overflow: hidden;
+  -webkit-transition: ease 1s all;
+  transition: ease 1s all;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "GothamBook", serif;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .h-menu__text {
+    font-family: 'gothambold1';
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h-menu__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(126, 187, 245, 0.918);
+    z-index: 228;
+    font-family: 'gothambold1';
+    font-size: 0px;
+    opacity: 0;
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+    -webkit-transform: skew(20deg) translateX(120%) scaleX(-1) rotate(90deg);
+            transform: skew(20deg) translateX(120%) scaleX(-1) rotate(90deg);
+  }
+}
+
+.h-menu__text--active {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  font-size: 25px;
+  -webkit-transform: skew(0deg) translateX(0) scaleX(1) rotate(0deg);
+          transform: skew(0deg) translateX(0) scaleX(1) rotate(0deg);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .h-menu__item {
+    width: 40%;
+    height: 50px;
+    z-index: 111111111;
+  }
+}
+
+.h-menu__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.h-menu__social img:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(29%);
+          filter: brightness(29%);
+}
+
+.h-menu__social img {
+  -webkit-transition: linear .5s all;
+  transition: linear .5s all;
+}
+
+.h-menu__logo {
+  text-align: center;
+}
+
+.h-menu__item:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-filter: brightness(25%);
+          filter: brightness(25%);
+  font-family: 'gothambold1';
+  -webkit-transition: linear .5s all;
+  transition: linear .5s all;
+  cursor: pointer;
+}
+
+.h-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 0px;
+  width: 100%;
+}
+
+.h-drop {
+  z-index: 99;
+  position: absolute;
+  bottom: 10vh;
+  left: 47vw;
+}
+/*# sourceMappingURL=style.css.map */
