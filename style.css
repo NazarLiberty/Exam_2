@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-family: "GothamBook";
   src: url("/fonts/GothamBook/GothamBook.woff") format("woff");
@@ -38,6 +39,11 @@
 
 .header {
   position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.h-slider {
   padding: 0;
 }
 
@@ -197,16 +203,6 @@
   background: transparent;
 }
 
-.my-dots li button:hover,
-.my-dots li button:focus {
-  outline: none;
-}
-
-.my-dots li button:hover:before,
-.my-dots li button:focus:before {
-  opacity: 1;
-}
-
 .my-dots li button:before {
   font-family: 'slick';
   font-size: 6px;
@@ -221,6 +217,16 @@
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
 }
 
 .header__burger {
@@ -401,5 +407,99 @@
     width: 64px;
     height: 64px;
   }
+}
+
+.info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+  margin-bottom: 85px;
+}
+
+.info-title__line {
+  margin-bottom: 25px;
+  height: 1px;
+  width: 100px;
+  background-color: black;
+}
+
+.title {
+  color: #2c4058;
+  line-height: 100%;
+  font-size: 44px;
+  font-family: 'gothambold1';
+}
+
+.title-secondary {
+  color: #2c4058;
+  margin: 0;
+  font-size: 23px;
+  font-family: "GothamBook", serif;
+}
+
+.text {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.685);
+}
+
+.text--location {
+  padding-top: 50px;
+  font-style: italic;
+  color: #2c4058;
+}
+
+.button {
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  border: #2c4058 1px solid;
+  color: #2c4058;
+}
+
+.info {
+  padding-top: 70px;
+  margin-bottom: 140px;
+  background-image: url(./img/back1.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.info--second {
+  background-image: url(./img/back2.png);
+  background-position: right top;
+}
+
+.info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 55px;
+}
+
+.info-img {
+  height: 470px;
+}
+
+.info-img__img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=style.css.map */

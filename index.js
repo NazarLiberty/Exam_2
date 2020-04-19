@@ -11,7 +11,9 @@ $(document).ready(
             {
                 breakpoint: 768,
                 settings: {
-                    centerMode: true,
+                    vertical: false,
+                    verticalScrolling: false,
+                    verticalSwiping: false,
                     slidesToShow: 1,
                     appendDots: $('#dots-mobile'),
                 }
