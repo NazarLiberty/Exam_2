@@ -70,8 +70,8 @@
 
 @media screen and (max-width: 768px) {
   .h-slider__text-block {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -446,6 +446,20 @@
   background-color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .info-title__line--white {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-title__line {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
+
 .title {
   color: #2c4058;
   line-height: 100%;
@@ -494,9 +508,38 @@
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1150px) {
+  .info {
+    background-position: right 110px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    background-position: top;
+    background-size: cover;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
 .info--second {
   background-image: url(./img/back2.png);
   background-position: right top;
+}
+
+@media screen and (max-width: 1150px) {
+  .info--second {
+    background-position: left bottom;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info--second {
+    background-size: 0;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 .info-text {
@@ -508,10 +551,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 55px;
-}
-
-.info-img {
-  height: 470px;
 }
 
 .info-img__img {
@@ -529,6 +568,13 @@
   padding-bottom: 170px;
 }
 
+@media screen and (max-width: 768px) {
+  .news {
+    padding-top: 35px;
+    padding-bottom: 105px;
+  }
+}
+
 .block-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,6 +590,12 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 85px;
+}
+
+@media screen and (max-width: 768px) {
+  .block-title {
+    padding-bottom: 15px;
+  }
 }
 
 .n-slider {
@@ -788,6 +840,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
 }
 
 .gallery__item {

@@ -63,8 +63,8 @@ padding: 0;
         text-align: center;
         color: white;
         @media screen and (max-width:768px){
-            margin-right: 10px;
-      margin-left: 10px;
+            margin-right: 20px;
+      margin-left: 20px;
         }
     }
     &__item{
@@ -329,6 +329,14 @@ left: 49vw;
         background-color: black;
         &--white{
             background-color: #fff;
+            @media screen and (max-width:768px){
+                margin-top: 15px;
+                margin-bottom:25px;
+            }
+        }
+        @media screen and (max-width:768px){
+            margin-top: 15px;
+            margin-bottom:25px;
         }
     }
 }
@@ -372,9 +380,26 @@ left: 49vw;
     background-image: url(./img/back1.png);
     background-position: left top;
     background-repeat: no-repeat;
+    @media screen and (max-width:1150px){
+        background-position: right 110px;
+    }
+    @media screen and (max-width:768px){
+        background-position: top;
+        background-size: cover;
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
     &--second{
         background-image: url(./img/back2.png); 
         background-position: right top;
+        @media screen and (max-width:1150px){
+            background-position: left bottom;
+        }
+        @media screen and (max-width:768px){
+            background-size: 0;
+            padding-top: 20px;
+    margin-bottom: 50px;
+        }
     }
     &-text{
         display: flex;
@@ -383,7 +408,7 @@ left: 49vw;
     }
 }
 .info-img{
-height: 470px;
+
     &__img{
         object-fit: contain;
         max-width: 100%;
@@ -399,6 +424,10 @@ height: 470px;
     background-size: cover;
     padding-top: 140px;
     padding-bottom: 170px;
+    @media screen and (max-width:768px){
+        padding-top: 35px;
+        padding-bottom:105px;
+    }
 }
 .block-title{
     display: flex;
@@ -406,6 +435,9 @@ height: 470px;
     justify-content: center;
     align-items: center;
     padding-bottom: 85px;
+    @media screen and (max-width:768px){
+        padding-bottom: 15px;
+    }
 }
 .n-slider{
     margin: 0;
@@ -585,6 +617,10 @@ max-width: 1920px;
          display: flex;
          justify-content: center;
      }
+     @media screen and (max-width:768px){
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
  }
 .gallery__item{
     padding-left: 5px;
