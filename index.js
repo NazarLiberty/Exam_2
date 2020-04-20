@@ -1,4 +1,4 @@
-$('#projectsMenu').on('click',()=>{
+$('#projectsMenu').on('click', () => {
     $('#menu path').attr('fill', 'transparent')
     $('#projectsMenu path').attr('fill', 'white')
     window.scrollTo({
@@ -6,13 +6,13 @@ $('#projectsMenu').on('click',()=>{
         behavior: 'smooth'
     })
 })
-$('#drop').on('click',()=>{
+$('#drop').on('click', (e) => {
     window.scrollTo({
-        top: $('#projects')[0].getBoundingClientRect().top,
+        top: (e.pageY - 400) + $('#gallery')[0].getBoundingClientRect().top,
         behavior: 'smooth'
     })
 })
-$('#aboutUsMenu').on('click',()=>{
+$('#aboutUsMenu').on('click', () => {
     $('#menu path').attr('fill', 'transparent')
     $('#aboutUsMenu path').attr('fill', 'white')
     window.scrollTo({
@@ -20,7 +20,7 @@ $('#aboutUsMenu').on('click',()=>{
         behavior: 'smooth'
     })
 })
-$('#newsMenu').on('click',(e)=>{
+$('#newsMenu').on('click', (e) => {
     $('#menu path').attr('fill', 'transparent')
     $('#newsMenu path').attr('fill', 'white')
     window.scrollTo({
@@ -28,7 +28,7 @@ $('#newsMenu').on('click',(e)=>{
         behavior: 'smooth'
     })
 })
-$('#contactMenu').on('click',(e)=>{
+$('#contactMenu').on('click', (e) => {
     $('#menu path').attr('fill', 'transparent')
     $('#contactMenu path').attr('fill', 'white')
     window.scrollTo({
@@ -37,7 +37,7 @@ $('#contactMenu').on('click',(e)=>{
     })
 })
 
-$(document).on('click',function(e){
+$(document).on('click', function (e) {
     console.log(e)
 })
 
@@ -110,7 +110,7 @@ $('#menu').on('click', function () {
 })
 
 function initMap() {
-    var NY = { lat: 40.687777, lng: -73.904736 };    
+    var NY = { lat: 40.687777, lng: -73.904736 };
     var map = new google.maps.Map(
         document.getElementById('map'), {
         zoom: 14.3,
@@ -332,10 +332,10 @@ function initMap() {
 
 
     });
-    var marker = new google.maps.Marker({ 
-    position: NY,
-    map: map,
-    icon: 'img/marker.svg',
-    animation: google.maps.Animation.BOUNCE,
+    var marker = new google.maps.Marker({
+        position: NY,
+        map: map,
+        icon: 'img/marker.svg',
+        animation: google.maps.Animation.BOUNCE,
     });
 }
