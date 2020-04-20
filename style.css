@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @font-face {
   font-family: "GothamBook";
-  src: url("./fonts/GothamBook/GothamBook.woff") format("woff");
+  src: url("/fonts/GothamBook/GothamBook.woff") format("woff");
 }
 
 @font-face {
   font-family: "gothambold1";
-  src: url("./fonts/gothambold/gothambold1.woff") format("woff");
+  src: url("/fonts/gothambold/gothambold1.woff") format("woff");
 }
 
 .align-items-center {
@@ -621,7 +621,7 @@ button span:nth-child(4) {
 }
 
 .info--second {
-  background-image: url(./img/Back2.png);
+  background-image: url(./img/back2.png);
   background-position: right top;
 }
 
